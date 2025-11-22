@@ -1,3 +1,38 @@
+Java Installation on Windows
+Step-by-Step Installation Guide
+Step 1: Download JDK
+Visit Oracle JDK Downloads or OpenJDK
+Select Windows x64 Installer for your version (Java 11+ recommended)
+Download the .exe file
+Step 2: Install JDK
+Run the downloaded installer as Administrator
+Follow installation wizard (accept default paths)
+Installation typically goes to C:\Program Files\Java\jdk-[version]
+Step 3: Set Environment Variables
+Open System Properties → Advanced → Environment Variables
+Create JAVA_HOME variable:
+Variable name: JAVA_HOME
+Variable value: C:\Program Files\Java\jdk-[version]
+Update PATH variable:
+Add %JAVA_HOME%\bin to the PATH
+Step 4: Verify Installation
+Open Command Prompt and run:
+
+java -version
+javac -version
+Eclipse IDE Setup
+Installation Steps
+Download Eclipse IDE for Java Developers from eclipse.org
+Extract the downloaded archive to desired location
+Launch Eclipse and select workspace location
+Creating New Java Project
+File → New → Java Project
+Project name: CCRM
+Use default JRE (should match your installed JDK)
+Create src folder structure with packages
+
+
+
 How to Run
 Prerequisites
 JDK Version: Java 11 or higher
